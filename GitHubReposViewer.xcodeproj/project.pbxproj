@@ -17,6 +17,21 @@
 		EE7D79A4277859B0007457AA /* WebAuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79A3277859B0007457AA /* WebAuthenticationPresenter.swift */; };
 		EE7D79A6277859B6007457AA /* WebAuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79A5277859B6007457AA /* WebAuthenticationSession.swift */; };
 		EE7D79A827785E90007457AA /* WebAuthenticationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79A727785E90007457AA /* WebAuthenticationExtensions.swift */; };
+		EE7D79AE2778B14D007457AA /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79AD2778B14D007457AA /* EndpointProtocol.swift */; };
+		EE7D79B02778B1A8007457AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79AF2778B1A8007457AA /* Router.swift */; };
+		EE7D79B22778B246007457AA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79B12778B246007457AA /* Environment.swift */; };
+		EE7D79B92778B3D7007457AA /* AuthServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79B82778B3D7007457AA /* AuthServiceProvider.swift */; };
+		EE7D79BB2778B44E007457AA /* ServiceProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79BA2778B44E007457AA /* ServiceProviderProtocol.swift */; };
+		EE7D79BE2778B4A1007457AA /* AuthWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79BD2778B4A1007457AA /* AuthWebService.swift */; };
+		EE7D79C02778B4B8007457AA /* AuthMemoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79BF2778B4B8007457AA /* AuthMemoryService.swift */; };
+		EE7D79C22778B4CD007457AA /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79C12778B4CD007457AA /* AuthEndpoint.swift */; };
+		EE7D79C42778B5D0007457AA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79C32778B5D0007457AA /* LoginViewModel.swift */; };
+		EE7D79C62778C20E007457AA /* EnumAssociated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79C52778C20E007457AA /* EnumAssociated.swift */; };
+		EE7D79C92778C412007457AA /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79C82778C412007457AA /* LoginError.swift */; };
+		EE7D79CC2778C7AC007457AA /* ActivityIndicatorViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79CB2778C7AC007457AA /* ActivityIndicatorViewModifier.swift */; };
+		EE7D79CF2778C816007457AA /* BlurViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79CE2778C816007457AA /* BlurViewRepresentation.swift */; };
+		EE7D79D22778C84A007457AA /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79D12778C84A007457AA /* ActivityIndicatorView.swift */; };
+		EE7D79D627791B49007457AA /* AccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79D527791B49007457AA /* AccessTokenResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +47,21 @@
 		EE7D79A5277859B6007457AA /* WebAuthenticationSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthenticationSession.swift; sourceTree = "<group>"; };
 		EE7D79A727785E90007457AA /* WebAuthenticationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthenticationExtensions.swift; sourceTree = "<group>"; };
 		EE7D79A9277873E3007457AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EE7D79AD2778B14D007457AA /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		EE7D79AF2778B1A8007457AA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EE7D79B12778B246007457AA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		EE7D79B82778B3D7007457AA /* AuthServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProvider.swift; sourceTree = "<group>"; };
+		EE7D79BA2778B44E007457AA /* ServiceProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderProtocol.swift; sourceTree = "<group>"; };
+		EE7D79BD2778B4A1007457AA /* AuthWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebService.swift; sourceTree = "<group>"; };
+		EE7D79BF2778B4B8007457AA /* AuthMemoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMemoryService.swift; sourceTree = "<group>"; };
+		EE7D79C12778B4CD007457AA /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		EE7D79C32778B5D0007457AA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EE7D79C52778C20E007457AA /* EnumAssociated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumAssociated.swift; sourceTree = "<group>"; };
+		EE7D79C82778C412007457AA /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		EE7D79CB2778C7AC007457AA /* ActivityIndicatorViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewModifier.swift; sourceTree = "<group>"; };
+		EE7D79CE2778C816007457AA /* BlurViewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewRepresentation.swift; sourceTree = "<group>"; };
+		EE7D79D12778C84A007457AA /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		EE7D79D527791B49007457AA /* AccessTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +94,13 @@
 		EE7D798A277854BB007457AA /* GitHubReposViewer */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D79D327791B25007457AA /* Models */,
+				EE7D79D02778C83C007457AA /* Views */,
+				EE7D79CD2778C806007457AA /* Representations */,
+				EE7D79CA2778C79C007457AA /* Modifiers */,
+				EE7D79B72778B320007457AA /* Services */,
+				EE7D79B62778B2F5007457AA /* ServiceProviders */,
+				EE7D79AA2778AF80007457AA /* Environment */,
 				EE7D79A9277873E3007457AA /* Info.plist */,
 				EE7D799F27785933007457AA /* Utilities */,
 				EE7D7999277854F8007457AA /* Scenes */,
@@ -96,6 +133,7 @@
 			children = (
 				EE7D799B27785511007457AA /* LoginView.swift */,
 				EE7D799D2778567F007457AA /* GitHubLoginButton.swift */,
+				EE7D79C32778B5D0007457AA /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -103,7 +141,9 @@
 		EE7D799F27785933007457AA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D79C72778C3C2007457AA /* ErrorTypes */,
 				EE7D79A02778598E007457AA /* WebAuthontication */,
+				EE7D79C52778C20E007457AA /* EnumAssociated.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -117,6 +157,91 @@
 				EE7D79A727785E90007457AA /* WebAuthenticationExtensions.swift */,
 			);
 			path = WebAuthontication;
+			sourceTree = "<group>";
+		};
+		EE7D79AA2778AF80007457AA /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79AD2778B14D007457AA /* EndpointProtocol.swift */,
+				EE7D79AF2778B1A8007457AA /* Router.swift */,
+				EE7D79B12778B246007457AA /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		EE7D79B62778B2F5007457AA /* ServiceProviders */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79B82778B3D7007457AA /* AuthServiceProvider.swift */,
+				EE7D79BA2778B44E007457AA /* ServiceProviderProtocol.swift */,
+			);
+			path = ServiceProviders;
+			sourceTree = "<group>";
+		};
+		EE7D79B72778B320007457AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79BC2778B48E007457AA /* AuthService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EE7D79BC2778B48E007457AA /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79BD2778B4A1007457AA /* AuthWebService.swift */,
+				EE7D79BF2778B4B8007457AA /* AuthMemoryService.swift */,
+				EE7D79C12778B4CD007457AA /* AuthEndpoint.swift */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		EE7D79C72778C3C2007457AA /* ErrorTypes */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79C82778C412007457AA /* LoginError.swift */,
+			);
+			path = ErrorTypes;
+			sourceTree = "<group>";
+		};
+		EE7D79CA2778C79C007457AA /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79CB2778C7AC007457AA /* ActivityIndicatorViewModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		EE7D79CD2778C806007457AA /* Representations */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79CE2778C816007457AA /* BlurViewRepresentation.swift */,
+			);
+			path = Representations;
+			sourceTree = "<group>";
+		};
+		EE7D79D02778C83C007457AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79D12778C84A007457AA /* ActivityIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE7D79D327791B25007457AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79D427791B31007457AA /* AccessToken */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE7D79D427791B31007457AA /* AccessToken */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79D527791B49007457AA /* AccessTokenResponse.swift */,
+			);
+			path = AccessToken;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +260,8 @@
 			dependencies = (
 			);
 			name = GitHubReposViewer;
+			packageProductDependencies = (
+			);
 			productName = GitHubReposViewer;
 			productReference = EE7D7988277854BB007457AA /* GitHubReposViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +290,8 @@
 				Base,
 			);
 			mainGroup = EE7D797F277854BB007457AA;
+			packageReferences = (
+			);
 			productRefGroup = EE7D7989277854BB007457AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,14 +318,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D79C22778B4CD007457AA /* AuthEndpoint.swift in Sources */,
+				EE7D79C02778B4B8007457AA /* AuthMemoryService.swift in Sources */,
 				EE7D799C27785511007457AA /* LoginView.swift in Sources */,
 				EE7D798E277854BB007457AA /* ContentView.swift in Sources */,
+				EE7D79C92778C412007457AA /* LoginError.swift in Sources */,
+				EE7D79C62778C20E007457AA /* EnumAssociated.swift in Sources */,
+				EE7D79B92778B3D7007457AA /* AuthServiceProvider.swift in Sources */,
+				EE7D79B02778B1A8007457AA /* Router.swift in Sources */,
 				EE7D79A2277859AA007457AA /* WebAuthenticationPresentationModifier.swift in Sources */,
+				EE7D79AE2778B14D007457AA /* EndpointProtocol.swift in Sources */,
+				EE7D79D627791B49007457AA /* AccessTokenResponse.swift in Sources */,
+				EE7D79BE2778B4A1007457AA /* AuthWebService.swift in Sources */,
 				EE7D799E2778567F007457AA /* GitHubLoginButton.swift in Sources */,
+				EE7D79C42778B5D0007457AA /* LoginViewModel.swift in Sources */,
 				EE7D79A4277859B0007457AA /* WebAuthenticationPresenter.swift in Sources */,
+				EE7D79B22778B246007457AA /* Environment.swift in Sources */,
 				EE7D798C277854BB007457AA /* GitHubReposViewerApp.swift in Sources */,
+				EE7D79BB2778B44E007457AA /* ServiceProviderProtocol.swift in Sources */,
+				EE7D79D22778C84A007457AA /* ActivityIndicatorView.swift in Sources */,
 				EE7D79A827785E90007457AA /* WebAuthenticationExtensions.swift in Sources */,
+				EE7D79CC2778C7AC007457AA /* ActivityIndicatorViewModifier.swift in Sources */,
 				EE7D79A6277859B6007457AA /* WebAuthenticationSession.swift in Sources */,
+				EE7D79CF2778C816007457AA /* BlurViewRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,7 @@ struct GitHubLoginButton: View {
             .padding(.horizontal, 15)
         }
         .frame(height: 50)
-        .background(Color("color_login_button_bg"))
+        .background(Color("color_dark_gray"))
         .cornerRadius(25)
     }
 }
