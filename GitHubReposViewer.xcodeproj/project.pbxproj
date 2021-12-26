@@ -11,6 +11,12 @@
 		EE7D798E277854BB007457AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D798D277854BB007457AA /* ContentView.swift */; };
 		EE7D7990277854BF007457AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7D798F277854BF007457AA /* Assets.xcassets */; };
 		EE7D7993277854BF007457AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7D7992277854BF007457AA /* Preview Assets.xcassets */; };
+		EE7D799C27785511007457AA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D799B27785511007457AA /* LoginView.swift */; };
+		EE7D799E2778567F007457AA /* GitHubLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D799D2778567F007457AA /* GitHubLoginButton.swift */; };
+		EE7D79A2277859AA007457AA /* WebAuthenticationPresentationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79A1277859AA007457AA /* WebAuthenticationPresentationModifier.swift */; };
+		EE7D79A4277859B0007457AA /* WebAuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79A3277859B0007457AA /* WebAuthenticationPresenter.swift */; };
+		EE7D79A6277859B6007457AA /* WebAuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79A5277859B6007457AA /* WebAuthenticationSession.swift */; };
+		EE7D79A827785E90007457AA /* WebAuthenticationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79A727785E90007457AA /* WebAuthenticationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		EE7D798D277854BB007457AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE7D798F277854BF007457AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7D7992277854BF007457AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE7D799B27785511007457AA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EE7D799D2778567F007457AA /* GitHubLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubLoginButton.swift; sourceTree = "<group>"; };
+		EE7D79A1277859AA007457AA /* WebAuthenticationPresentationModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthenticationPresentationModifier.swift; sourceTree = "<group>"; };
+		EE7D79A3277859B0007457AA /* WebAuthenticationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthenticationPresenter.swift; sourceTree = "<group>"; };
+		EE7D79A5277859B6007457AA /* WebAuthenticationSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthenticationSession.swift; sourceTree = "<group>"; };
+		EE7D79A727785E90007457AA /* WebAuthenticationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthenticationExtensions.swift; sourceTree = "<group>"; };
+		EE7D79A9277873E3007457AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,9 @@
 		EE7D798A277854BB007457AA /* GitHubReposViewer */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D79A9277873E3007457AA /* Info.plist */,
+				EE7D799F27785933007457AA /* Utilities */,
+				EE7D7999277854F8007457AA /* Scenes */,
 				EE7D798B277854BB007457AA /* GitHubReposViewerApp.swift */,
 				EE7D798D277854BB007457AA /* ContentView.swift */,
 				EE7D798F277854BF007457AA /* Assets.xcassets */,
@@ -65,6 +81,42 @@
 				EE7D7992277854BF007457AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE7D7999277854F8007457AA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D799A277854FF007457AA /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EE7D799A277854FF007457AA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D799B27785511007457AA /* LoginView.swift */,
+				EE7D799D2778567F007457AA /* GitHubLoginButton.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE7D799F27785933007457AA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79A02778598E007457AA /* WebAuthontication */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE7D79A02778598E007457AA /* WebAuthontication */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79A5277859B6007457AA /* WebAuthenticationSession.swift */,
+				EE7D79A3277859B0007457AA /* WebAuthenticationPresenter.swift */,
+				EE7D79A1277859AA007457AA /* WebAuthenticationPresentationModifier.swift */,
+				EE7D79A727785E90007457AA /* WebAuthenticationExtensions.swift */,
+			);
+			path = WebAuthontication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D799C27785511007457AA /* LoginView.swift in Sources */,
 				EE7D798E277854BB007457AA /* ContentView.swift in Sources */,
+				EE7D79A2277859AA007457AA /* WebAuthenticationPresentationModifier.swift in Sources */,
+				EE7D799E2778567F007457AA /* GitHubLoginButton.swift in Sources */,
+				EE7D79A4277859B0007457AA /* WebAuthenticationPresenter.swift in Sources */,
 				EE7D798C277854BB007457AA /* GitHubReposViewerApp.swift in Sources */,
+				EE7D79A827785E90007457AA /* WebAuthenticationExtensions.swift in Sources */,
+				EE7D79A6277859B6007457AA /* WebAuthenticationSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +329,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubReposViewer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GitHubReposViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,6 +359,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubReposViewer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GitHubReposViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
