@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class LoginViewModel: ObservableObject {
 
@@ -14,6 +15,10 @@ class LoginViewModel: ObservableObject {
     
     @Published var activeAlert: LoginView.ActiveAlert?
     @Published var isActivityIndicatorAnimating: Bool = false
+    @Published var showingWebAuthenticationSession: Bool = false
+    @Published var isUserAuthorized: Bool = false
+    
+    private var subscriptions = Set<AnyCancellable>()
 
     init(authServiceProvider: AuthServiceProvider = AuthServiceProvider(), environment: Environment = .current) {
         self.authServiceProvider = authServiceProvider
@@ -26,6 +31,15 @@ class LoginViewModel: ObservableObject {
         return (url, environment.callbackURLScheme)
     }
     
+    func login() {
+        switch environment {
+        case .sandbox:
+            getAccessToken()
+        case .development:
+            showingWebAuthenticationSession = true
+        }
+    }
+    
     func validate(_ callbackURL: URL) {
         let components = URLComponents(string: callbackURL.absoluteString)
         let code = components?.queryItems?.first(where: { $0.name == "code" })?.value
@@ -36,8 +50,19 @@ class LoginViewModel: ObservableObject {
         }
     }
 
-    func getAccessToken(code: String) {
+    func getAccessToken(code: String = "") {
         print(code)
         isActivityIndicatorAnimating = true
+        authServiceProvider.service().getAccessToken(code: code)
+            .sink(receiveCompletion: { completion in
+                self.isActivityIndicatorAnimating = false
+                if case let .failure(error) = completion {
+                    self.activeAlert = .error(message: error.localizedDescription)
+                }
+            }) { token in
+                UserDefaultsConfig.token.value = token
+                self.isUserAuthorized = true
+            }
+            .store(in: &subscriptions)
     }
 }

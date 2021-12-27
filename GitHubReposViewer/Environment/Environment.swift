@@ -12,7 +12,7 @@ enum Environment: String {
     case development
     
     static var current: Environment {
-        .development
+        .sandbox
     }
     
     var clientID: String {

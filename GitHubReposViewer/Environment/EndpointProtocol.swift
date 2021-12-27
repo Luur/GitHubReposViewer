@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 
 protocol EndpointProtocol {
     
@@ -32,10 +31,6 @@ enum RequestMethod: String {
     case put = "PUT"
     case patch = "PATCH"
     case delete = "DELETE"
-    
-    func toHTTPMethod() -> HTTPMethod? {
-        HTTPMethod(rawValue: self.rawValue)
-    }
 }
 
 extension EndpointProtocol {

@@ -43,7 +43,7 @@ class Router<Endpoint: EndpointProtocol>: RouterProtocol {
         return URLSession.shared.dataTaskPublisher(for: request)
             .map { $0.data}
             .decode(type: T.self, decoder: JSONDecoder())
-            .receive(on: RunLoop.main)
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State private var showingWebAuthenticationSession: Bool = false
     @State private var activeAlert: ActiveAlert?
+    @EnvironmentObject var sessionManager: SessionManager
     
     @StateObject var loginViewModel = LoginViewModel()
     
@@ -20,11 +20,11 @@ struct LoginView: View {
                 .font(.system(size: 30))
                 .foregroundColor(Color("color_dark_gray"))
             GitHubLoginButton {
-                showingWebAuthenticationSession = true
+                loginViewModel.login()
             }
         }
         .activityIndicatorView(isAnimating: loginViewModel.isActivityIndicatorAnimating)
-        .webAuthenticationSession(isPresented: $showingWebAuthenticationSession) {
+        .webAuthenticationSession(isPresented: $loginViewModel.showingWebAuthenticationSession) {
             WebAuthenticationSession(url: loginViewModel.authenticationSessionOptions.url, callbackURLScheme: loginViewModel.authenticationSessionOptions.callbackURLScheme) { result in
                 switch result {
                 case .success(let callbackURL):
@@ -40,6 +40,10 @@ struct LoginView: View {
             case .error(let message):
                 return Alert(title: Text(""), message: Text(message), dismissButton: .default(Text("OK")))
             }
+        }
+        .onReceive(loginViewModel.$isUserAuthorized) { success in
+            guard success else { return }
+            sessionManager.isUserAuthorized = true
         }
     }
 }

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct GitHubReposViewerApp: App {
+    
+    @StateObject var sessionManager: SessionManager = SessionManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(sessionManager)
         }
     }
 }
