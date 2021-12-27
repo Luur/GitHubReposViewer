@@ -12,6 +12,7 @@ class RepositoriesViewModel: ObservableObject {
     
     private let repositoriesServiceProvider: RepositoriesServiceProvider
     private let pagination: Pagination
+    private let historyDataStorage: HistoryDataStorageProtocol
     
     @Published var activeAlert: LoginView.ActiveAlert?
     @Published var searchText: String = ""
@@ -25,9 +26,10 @@ class RepositoriesViewModel: ObservableObject {
             .eraseToAnyPublisher()
     }
     
-    init(repositoriesServiceProvider: RepositoriesServiceProvider = RepositoriesServiceProvider(), pagination: Pagination = Pagination(itemsPerPage: 10)) {
+    init(repositoriesServiceProvider: RepositoriesServiceProvider = RepositoriesServiceProvider(), pagination: Pagination = Pagination(itemsPerPage: 10), historyDataStorage: HistoryDataStorageProtocol = HistoryDataStorage.shared) {
         self.repositoriesServiceProvider = repositoriesServiceProvider
         self.pagination = pagination
+        self.historyDataStorage = historyDataStorage
         searchTextPublisher
             .flatMap { (text) -> AnyPublisher<[Repository], Error> in
                 repositoriesServiceProvider.service().fetchRepositories(searchText: text, page: 1)
@@ -58,6 +60,10 @@ class RepositoriesViewModel: ObservableObject {
                 self.repositories.append(contentsOf: repositories)
             }
             .store(in: &subscriptions)
+    }
+    
+    func markAsViewed(_ repository: Repository) {
+        historyDataStorage.add(repository)
     }
     
     var isNextPageAvailable: Bool {

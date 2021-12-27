@@ -47,6 +47,8 @@
 		EE7D79F72779F124007457AA /* RepositoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79F62779F124007457AA /* RepositoriesResponse.swift */; };
 		EE7D79F9277A1A9A007457AA /* RepositoriesListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79F8277A1A9A007457AA /* RepositoriesListRow.swift */; };
 		EE7D79FB277A1FCB007457AA /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79FA277A1FCB007457AA /* Pagination.swift */; };
+		EE7D79FD277A2B7E007457AA /* HistoryDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79FC277A2B7E007457AA /* HistoryDataStorage.swift */; };
+		EE7D79FF277A303F007457AA /* EmptyDataViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79FE277A303F007457AA /* EmptyDataViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		EE7D79F62779F124007457AA /* RepositoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesResponse.swift; sourceTree = "<group>"; };
 		EE7D79F8277A1A9A007457AA /* RepositoriesListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListRow.swift; sourceTree = "<group>"; };
 		EE7D79FA277A1FCB007457AA /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		EE7D79FC277A2B7E007457AA /* HistoryDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataStorage.swift; sourceTree = "<group>"; };
+		EE7D79FE277A303F007457AA /* EmptyDataViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7D79CB2778C7AC007457AA /* ActivityIndicatorViewModifier.swift */,
+				EE7D79FE277A303F007457AA /* EmptyDataViewModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7D79D82779B9E6007457AA /* SessionManager.swift */,
+				EE7D79FC277A2B7E007457AA /* HistoryDataStorage.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 				EE7D79E52779C402007457AA /* RepositoriesView.swift in Sources */,
 				EE7D79C22778B4CD007457AA /* AuthEndpoint.swift in Sources */,
 				EE7D79E12779C141007457AA /* ProfileView.swift in Sources */,
+				EE7D79FD277A2B7E007457AA /* HistoryDataStorage.swift in Sources */,
 				EE7D79E72779C40D007457AA /* HistoryView.swift in Sources */,
 				EE7D79C02778B4B8007457AA /* AuthMockService.swift in Sources */,
 				EE7D79F72779F124007457AA /* RepositoriesResponse.swift in Sources */,
@@ -443,6 +450,7 @@
 				EE7D79B22778B246007457AA /* Environment.swift in Sources */,
 				EE7D798C277854BB007457AA /* GitHubReposViewerApp.swift in Sources */,
 				EE7D79BB2778B44E007457AA /* ServiceProviderProtocol.swift in Sources */,
+				EE7D79FF277A303F007457AA /* EmptyDataViewModifier.swift in Sources */,
 				EE7D79D22778C84A007457AA /* ActivityIndicatorView.swift in Sources */,
 				EE7D79A827785E90007457AA /* WebAuthenticationExtensions.swift in Sources */,
 				EE7D79CC2778C7AC007457AA /* ActivityIndicatorViewModifier.swift in Sources */,

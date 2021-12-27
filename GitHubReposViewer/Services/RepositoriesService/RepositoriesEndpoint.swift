@@ -8,7 +8,7 @@
 import Foundation
 
 enum RepositoriesEndpoint {
-    case repositories(searchText: String)
+    case repositories(searchText: String, page: Int)
 }
 
 extension RepositoriesEndpoint: EndpointProtocol {
@@ -19,9 +19,9 @@ extension RepositoriesEndpoint: EndpointProtocol {
     
     var path: String {
         switch self {
-        case .repositories(let searchText):
+        case .repositories(let searchText, let page):
             let path = "search/repositories"
-            return path + query(from: ["q": searchText])
+            return path + query(from: ["q": searchText, "page": String(page), "per_page": "10", "sort": "stars"])
         }
     }
     

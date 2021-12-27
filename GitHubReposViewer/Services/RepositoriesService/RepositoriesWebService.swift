@@ -20,7 +20,7 @@ class RepositoriesWebService: RepositoriesServiceProtocol {
     
     func fetchRepositories(searchText: String, page: Int) -> AnyPublisher<[Repository], Error> {
         Future<[Repository], Error> { [unowned self] promise in
-            router.request(.repositories(searchText: searchText))
+            router.request(.repositories(searchText: searchText, page: page))
                 .tryMap { (result: RepositoriesResponse) -> [Repository] in
                     result.items
                 }

@@ -18,6 +18,7 @@ struct RepositoriesView: View {
                 RepositoriesListRow(repository: repo)
                     .listRowSeparator(.hidden)
                     .onTapGesture {
+                        repositoriesViewModel.markAsViewed(repo)
                         openURL(URL(string: repo.htmlURL)!)
                     }
                     .onAppear {
@@ -33,6 +34,9 @@ struct RepositoriesView: View {
             }
         }
         .listStyle(.plain)
+        .emptyDataView(condition: repositoriesViewModel.repositories.isEmpty) {
+            Text("Currentrly there are no repositories.")
+        }
         .alert(item: $repositoriesViewModel.activeAlert) { item in
             switch item {
             case .error(let message):
