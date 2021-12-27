@@ -23,7 +23,7 @@ class AuthServiceProvider: ServiceProviderProtocol {
     func service() -> AuthServiceProtocol {
         switch environment {
         case .sandbox:
-            return AuthMemoryService()
+            return AuthMockService()
         case .development:
             return AuthWebService()
         }

@@ -8,8 +8,46 @@
 import SwiftUI
 
 struct RepositoriesView: View {
+    
+    @SwiftUI.Environment(\.openURL) var openURL
+    @StateObject var repositoriesViewModel = RepositoriesViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(repositoriesViewModel.repositories) { repo in
+                RepositoriesListRow(repository: repo)
+                    .listRowSeparator(.hidden)
+                    .onTapGesture {
+                        openURL(URL(string: repo.htmlURL)!)
+                    }
+                    .onAppear {
+                        repositoriesViewModel.fetchMoreRepositoriesIfNeeded(itemID: repo.id)
+                    }
+            }
+            if repositoriesViewModel.isNextPageAvailable {
+                HStack {
+                    Spacer()
+                    ProgressView()
+                    Spacer()
+                }
+            }
+        }
+        .listStyle(.plain)
+        .alert(item: $repositoriesViewModel.activeAlert) { item in
+            switch item {
+            case .error(let message):
+                return Alert(title: Text(""), message: Text(message), dismissButton: .default(Text("OK")))
+            }
+        }
+        .searchable(text: $repositoriesViewModel.searchText)
+    }
+}
+
+extension LoginView {
+    
+    enum RepositoriesView: Identifiable, EnumAssociated {
+        case error(message: String)
+        var id: String { associated.caseDescription }
     }
 }
 

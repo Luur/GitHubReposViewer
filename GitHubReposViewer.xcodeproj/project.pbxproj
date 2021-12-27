@@ -23,7 +23,7 @@
 		EE7D79B92778B3D7007457AA /* AuthServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79B82778B3D7007457AA /* AuthServiceProvider.swift */; };
 		EE7D79BB2778B44E007457AA /* ServiceProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79BA2778B44E007457AA /* ServiceProviderProtocol.swift */; };
 		EE7D79BE2778B4A1007457AA /* AuthWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79BD2778B4A1007457AA /* AuthWebService.swift */; };
-		EE7D79C02778B4B8007457AA /* AuthMemoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79BF2778B4B8007457AA /* AuthMemoryService.swift */; };
+		EE7D79C02778B4B8007457AA /* AuthMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79BF2778B4B8007457AA /* AuthMockService.swift */; };
 		EE7D79C22778B4CD007457AA /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79C12778B4CD007457AA /* AuthEndpoint.swift */; };
 		EE7D79C42778B5D0007457AA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79C32778B5D0007457AA /* LoginViewModel.swift */; };
 		EE7D79C62778C20E007457AA /* EnumAssociated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79C52778C20E007457AA /* EnumAssociated.swift */; };
@@ -38,6 +38,15 @@
 		EE7D79E12779C141007457AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79E02779C141007457AA /* ProfileView.swift */; };
 		EE7D79E52779C402007457AA /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79E42779C402007457AA /* RepositoriesView.swift */; };
 		EE7D79E72779C40D007457AA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79E62779C40D007457AA /* HistoryView.swift */; };
+		EE7D79E92779CD5F007457AA /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79E82779CD5F007457AA /* RepositoriesViewModel.swift */; };
+		EE7D79EC2779EB72007457AA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79EB2779EB71007457AA /* Repository.swift */; };
+		EE7D79EE2779EC4C007457AA /* RepositoriesServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79ED2779EC4C007457AA /* RepositoriesServiceProvider.swift */; };
+		EE7D79F12779EC92007457AA /* RepositoriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79F02779EC92007457AA /* RepositoriesEndpoint.swift */; };
+		EE7D79F32779EE46007457AA /* RepositoriesWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79F22779EE46007457AA /* RepositoriesWebService.swift */; };
+		EE7D79F52779EE6C007457AA /* RepositoriesMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79F42779EE6C007457AA /* RepositoriesMockService.swift */; };
+		EE7D79F72779F124007457AA /* RepositoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79F62779F124007457AA /* RepositoriesResponse.swift */; };
+		EE7D79F9277A1A9A007457AA /* RepositoriesListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79F8277A1A9A007457AA /* RepositoriesListRow.swift */; };
+		EE7D79FB277A1FCB007457AA /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D79FA277A1FCB007457AA /* Pagination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +68,7 @@
 		EE7D79B82778B3D7007457AA /* AuthServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProvider.swift; sourceTree = "<group>"; };
 		EE7D79BA2778B44E007457AA /* ServiceProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderProtocol.swift; sourceTree = "<group>"; };
 		EE7D79BD2778B4A1007457AA /* AuthWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebService.swift; sourceTree = "<group>"; };
-		EE7D79BF2778B4B8007457AA /* AuthMemoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMemoryService.swift; sourceTree = "<group>"; };
+		EE7D79BF2778B4B8007457AA /* AuthMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockService.swift; sourceTree = "<group>"; };
 		EE7D79C12778B4CD007457AA /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
 		EE7D79C32778B5D0007457AA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EE7D79C52778C20E007457AA /* EnumAssociated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumAssociated.swift; sourceTree = "<group>"; };
@@ -74,6 +83,15 @@
 		EE7D79E02779C141007457AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EE7D79E42779C402007457AA /* RepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesView.swift; sourceTree = "<group>"; };
 		EE7D79E62779C40D007457AA /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		EE7D79E82779CD5F007457AA /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		EE7D79EB2779EB71007457AA /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		EE7D79ED2779EC4C007457AA /* RepositoriesServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesServiceProvider.swift; sourceTree = "<group>"; };
+		EE7D79F02779EC92007457AA /* RepositoriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesEndpoint.swift; sourceTree = "<group>"; };
+		EE7D79F22779EE46007457AA /* RepositoriesWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesWebService.swift; sourceTree = "<group>"; };
+		EE7D79F42779EE6C007457AA /* RepositoriesMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesMockService.swift; sourceTree = "<group>"; };
+		EE7D79F62779F124007457AA /* RepositoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesResponse.swift; sourceTree = "<group>"; };
+		EE7D79F8277A1A9A007457AA /* RepositoriesListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListRow.swift; sourceTree = "<group>"; };
+		EE7D79FA277A1FCB007457AA /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +179,7 @@
 				EE7D79A02778598E007457AA /* WebAuthontication */,
 				EE7D79C52778C20E007457AA /* EnumAssociated.swift */,
 				EE7D79DA2779BA02007457AA /* UserDefaultsConfig.swift */,
+				EE7D79FA277A1FCB007457AA /* Pagination.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -191,6 +210,7 @@
 			children = (
 				EE7D79B82778B3D7007457AA /* AuthServiceProvider.swift */,
 				EE7D79BA2778B44E007457AA /* ServiceProviderProtocol.swift */,
+				EE7D79ED2779EC4C007457AA /* RepositoriesServiceProvider.swift */,
 			);
 			path = ServiceProviders;
 			sourceTree = "<group>";
@@ -198,6 +218,7 @@
 		EE7D79B72778B320007457AA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D79EF2779EC7F007457AA /* RepositoriesService */,
 				EE7D79BC2778B48E007457AA /* AuthService */,
 			);
 			path = Services;
@@ -207,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7D79BD2778B4A1007457AA /* AuthWebService.swift */,
-				EE7D79BF2778B4B8007457AA /* AuthMemoryService.swift */,
+				EE7D79BF2778B4B8007457AA /* AuthMockService.swift */,
 				EE7D79C12778B4CD007457AA /* AuthEndpoint.swift */,
 			);
 			path = AuthService;
@@ -249,6 +270,7 @@
 		EE7D79D327791B25007457AA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE7D79EA2779EADE007457AA /* Repository */,
 				EE7D79D427791B31007457AA /* AccessToken */,
 			);
 			path = Models;
@@ -282,6 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				EE7D79E42779C402007457AA /* RepositoriesView.swift */,
+				EE7D79E82779CD5F007457AA /* RepositoriesViewModel.swift */,
+				EE7D79F8277A1A9A007457AA /* RepositoriesListRow.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -292,6 +316,25 @@
 				EE7D79E62779C40D007457AA /* HistoryView.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		EE7D79EA2779EADE007457AA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79EB2779EB71007457AA /* Repository.swift */,
+				EE7D79F62779F124007457AA /* RepositoriesResponse.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EE7D79EF2779EC7F007457AA /* RepositoriesService */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D79F02779EC92007457AA /* RepositoriesEndpoint.swift */,
+				EE7D79F22779EE46007457AA /* RepositoriesWebService.swift */,
+				EE7D79F42779EE6C007457AA /* RepositoriesMockService.swift */,
+			);
+			path = RepositoriesService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,21 +411,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D79F52779EE6C007457AA /* RepositoriesMockService.swift in Sources */,
+				EE7D79EE2779EC4C007457AA /* RepositoriesServiceProvider.swift in Sources */,
+				EE7D79EC2779EB72007457AA /* Repository.swift in Sources */,
 				EE7D79E52779C402007457AA /* RepositoriesView.swift in Sources */,
 				EE7D79C22778B4CD007457AA /* AuthEndpoint.swift in Sources */,
 				EE7D79E12779C141007457AA /* ProfileView.swift in Sources */,
 				EE7D79E72779C40D007457AA /* HistoryView.swift in Sources */,
-				EE7D79C02778B4B8007457AA /* AuthMemoryService.swift in Sources */,
+				EE7D79C02778B4B8007457AA /* AuthMockService.swift in Sources */,
+				EE7D79F72779F124007457AA /* RepositoriesResponse.swift in Sources */,
 				EE7D79DE2779BE07007457AA /* TabBarView.swift in Sources */,
 				EE7D799C27785511007457AA /* LoginView.swift in Sources */,
+				EE7D79FB277A1FCB007457AA /* Pagination.swift in Sources */,
+				EE7D79F9277A1A9A007457AA /* RepositoriesListRow.swift in Sources */,
 				EE7D798E277854BB007457AA /* ContentView.swift in Sources */,
 				EE7D79C92778C412007457AA /* LoginError.swift in Sources */,
 				EE7D79C62778C20E007457AA /* EnumAssociated.swift in Sources */,
+				EE7D79F12779EC92007457AA /* RepositoriesEndpoint.swift in Sources */,
 				EE7D79DB2779BA02007457AA /* UserDefaultsConfig.swift in Sources */,
 				EE7D79B92778B3D7007457AA /* AuthServiceProvider.swift in Sources */,
 				EE7D79B02778B1A8007457AA /* Router.swift in Sources */,
 				EE7D79A2277859AA007457AA /* WebAuthenticationPresentationModifier.swift in Sources */,
 				EE7D79AE2778B14D007457AA /* EndpointProtocol.swift in Sources */,
+				EE7D79F32779EE46007457AA /* RepositoriesWebService.swift in Sources */,
 				EE7D79D627791B49007457AA /* AccessTokenResponse.swift in Sources */,
 				EE7D79BE2778B4A1007457AA /* AuthWebService.swift in Sources */,
 				EE7D799E2778567F007457AA /* GitHubLoginButton.swift in Sources */,
@@ -396,6 +447,7 @@
 				EE7D79A827785E90007457AA /* WebAuthenticationExtensions.swift in Sources */,
 				EE7D79CC2778C7AC007457AA /* ActivityIndicatorViewModifier.swift in Sources */,
 				EE7D79A6277859B6007457AA /* WebAuthenticationSession.swift in Sources */,
+				EE7D79E92779CD5F007457AA /* RepositoriesViewModel.swift in Sources */,
 				EE7D79CF2778C816007457AA /* BlurViewRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,9 +585,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,7 +598,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -563,9 +616,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +629,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
